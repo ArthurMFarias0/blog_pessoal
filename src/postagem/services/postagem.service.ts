@@ -15,7 +15,8 @@ import { Postagem } from "../entities/postagem.entity";
     async findAll (): Promise<Postagem[]> {
         return await this.postagemReporsitory.find({
             relations: {
-                tema: true
+                tema: true,
+                usuario: true
             }
         });
     }
@@ -26,7 +27,8 @@ import { Postagem } from "../entities/postagem.entity";
                 id
             }, 
             relations: {
-                    tema: true
+                    tema: true,
+                    usuario: true
             }    
         });
 
@@ -40,7 +42,8 @@ import { Postagem } from "../entities/postagem.entity";
             titulo: ILike(`%${titulo}%`)
          },
          relations: {
-                tema: true
+                tema: true,
+                usuario: true
         }
         })
     }

@@ -1,5 +1,5 @@
 
-export class UseLogin{
+export class UserLogin {
 
     public usuario: string
 
