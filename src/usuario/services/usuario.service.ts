@@ -1,7 +1,7 @@
 import { HttpException, HttpStatus } from "@nestjs/common";
 import { Injectable } from "@nestjs/common/decorators";
 import { InjectRepository } from "@nestjs/typeorm";
-import { Bcrypt } from "src/auth/bcrypt/bcrypt";
+import { Bcrypt } from "../../auth/bcrypt/bcrypt";
 import { Repository } from "typeorm";
 import { Usuario } from "../entities/usuario.entity";
 
